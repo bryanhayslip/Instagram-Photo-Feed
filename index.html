@@ -32,17 +32,23 @@
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body">
-                            ...
+                            <div class="form-floating">
+                                <textarea class="form-control"
+                                    style="height: 100px"></textarea>
+                                    <br>
+                                <label for="floatingTextarea2"><i class="fa-solid fa-camera fa-xl"></i>&nbsp; &nbsp;<i
+                                        class="fa-solid fa-location-dot fa-xl"></i></label>
+                            </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-success">Publish</button>
                         </div>
                     </div>
                 </div>
@@ -62,7 +68,7 @@
         </div>
     </nav>
     <!-- This is where the photo feed starts -->
-    <div>
+    <div class="pills">
         <ul class="nav nav-pills my-3 justify-content-center" id="pills-tab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
@@ -78,53 +84,157 @@
             <!-- Photo grid -->
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                 <!-- Mexico City Pictures -->
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col">
                         <img src="https://wp.technologyreview.com/wp-content/uploads/2021/12/GettyImages-1064279806.jpg"
-                            class="img-responsive" width="100%">
+                            class="rounded mx-auto d-block" width="100%">
                     </div>
                     <div class="col">
                         <img src="https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2021/7/15/2/shutterstock_Ramiro-Reyna-Jr-1322105165.jpg.rend.hgtvcom.966.644.suffix/1626392873055.jpeg"
-                            class="img-responsive" width="100%">
+                            class="rounded mx-auto d-block" width="100%">
                     </div>
                     <div class="col">
                         <img src="https://res.cloudinary.com/sagacity/image/upload/c_crop,h_1173,w_2000,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/shutterstock_1301695258_muaarc.jpg"
-                            class="img-responsive" width="100%">
+                            class="rounded mx-auto d-block" width="100%">
                     </div>
                 </div>
+                <br>
+
                 <!-- San Jose Pictures -->
                 <div class="row">
                     <div class="col">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Downtown_San_Jose_%2830001966530%29.jpg"
-                            class="img-responsive" width="100%">
+                            class="rounded mx-auto d-block" width="100%">
                     </div>
                     <div class="col">
                         <img src="https://media.istockphoto.com/photos/san-jose-california-picture-id1147892817?b=1&k=20&m=1147892817&s=170667a&w=0&h=Ll039bb02q08Ytrv8P2PP3H8h96D_uQe5Eg6NdRlKHY="
-                            class="img-responsive" width="100%">
+                            class="rounded mx-auto d-block" width="100%">
                     </div>
                     <div class="col">
                         <img src="https://www.territorysupply.com/wp-content/uploads/2019/09/best-hikes-san-jose-ca.jpg"
-                            class="img-responsive" width="100%">
+                            class="rounded mx-auto d-block" width="100%">
                     </div>
                 </div>
+                <br>
                 <!-- New York Pictures -->
                 <div class="row">
                     <div class="col">
                         <img src="https://cdn.cnn.com/cnnnext/dam/assets/210409114908-nyc-april-2021-tease-super-tease.jpg"
-                            class="img-responsive" width="100%">
+                            class="rounded mx-auto d-block" width="100%">
                     </div>
                     <div class="col">
                         <img src="https://media.cntraveler.com/photos/6009c02c8ebb4b589a89b587/16:9/w_2560%2Cc_limit/NYCQuarantineHotels-2021-GettyImages-1190427876.jpg"
-                            class="img-responsive" width="100%">
+                            class="rounded mx-auto d-block" width="100%">
                     </div>
                     <div class="col">
-                        <img src="https://cdn.vox-cdn.com/thumbor/GAkZQtSESV7fbtN2L3F3a43XoBM=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/18995290/New_York_City_Central_Park_from_Above.jpg"
-                            class="img-responsive" width="100%">
+                        <img src="https://assets.centralparknyc.org/media/images/_1200x630_crop_center-center_82_none/Sheep-Meadow-Aerial-Central-Park-credit-the-Central-Park-Conservancy.jpg?mtime=1597065139"
+                            class="rounded mx-auto d-block" width="100%">
                     </div>
                 </div>
             </div>
             <!-- Photo feed -->
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="container">
+                    <div class="post">
+                        <div class="post-header">
+                            <div>
+                                <h2>No. 1</h2>
+                            </div><div>
+                                <span>04/04</span>
+                            </div>
+                        </div>
+                        <div><img src="https://picsum.photos/id/1045/600/400"></img></div>
+                        <div>
+                            <p><strong>100 likes</strong></p>
+                            <p>This is my first bootstrap project! How cool is that? <strong>#BreatheCode</strong></p>
+                        </div>
+                        <br>
+                        <div class="comments">
+                            <i class="fa-regular fa-heart fa-xl p-3"></i>&nbsp;<span class="text-secondary">Comment</span>
+                            
+                        </div>
+                        
+                          
+                        
+                    </div>
+                    <div class="post">
+                        <div class="post-header">
+                            <div>
+                                <h2>No. 2</h2>
+                            </div><div>
+                                <span>02/01</span>
+                            </div>
+                        </div>
+                        <div><img src="https://picsum.photos/id/1029/600/400"></img></div>
+                        <div>
+                            <p><strong>100 likes</strong></p>
+                            <p>This is my first bootstrap project! How cool is that? <strong>#BreatheCode</strong></p>
+                        </div>
+                        <br>
+                        <div class="comments">
+                            <i class="fa-regular fa-heart fa-xl p-3"></i>&nbsp;<span class="text-secondary">Comment</span>
+                            
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-header">
+                            <div>
+                                <h2>No. 3</h2>
+                            </div><div>
+                                <span>08/18</span>
+                            </div>
+                        </div>
+                        <div><img src="https://picsum.photos/id/1037/600/400"></img></div>
+                        <div>
+                            <p><strong>100 likes</strong></p>
+                            <p>This is my first bootstrap project! How cool is that? <strong>#BreatheCode</strong></p>
+                        </div>
+                        <br>
+                        <div class="comments">
+                            <i class="fa-regular fa-heart fa-xl p-3"></i>&nbsp;<span class="text-secondary">Comment</span>
+                            
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-header">
+                            <div>
+                                <h2>No. 4</h2>
+                            </div><div>
+                                <span>11/11</span>
+                            </div>
+                        </div>
+                        <div><img src="https://picsum.photos/id/102/600/400"></img></div>
+                        <div>
+                            <p><strong>100 likes</strong></p>
+                            <p>This is my first bootstrap project! How cool is that? <strong>#BreatheCode</strong></p>
+                        </div>
+                        <br>
+                        <div class="comments">
+                            <i class="fa-regular fa-heart fa-xl p-3"></i>&nbsp;<span class="text-secondary">Comment</span>
+                            
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-header">
+                            <div>
+                                <h2>No. 5</h2>
+                            </div><div>
+                                <span>02/04</span>
+                            </div>
+                        </div>
+                        <div><img src="https://picsum.photos/id/1018/600/400"></img></div>
+                        <div>
+                            <p><strong>100 likes</strong></p>
+                            <p>This is my first bootstrap project! How cool is that? <strong>#BreatheCode</strong></p>
+                        </div>
+                        <br>
+                        <div class="comments">
+                            <i class="fa-regular fa-heart fa-xl p-3"></i>&nbsp;<span class="text-secondary">Comment</span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
